@@ -1,19 +1,20 @@
 import Test from "./Test";
 import "./app.scss";
 import { motion } from "framer-motion";
-import { Navbar } from "./components";
+import { Navbar, Sidebar } from "./components";
 const App = () => {
   return (
     <div>
-      <section>
+      <section id="Homepage">
         <Navbar />
       </section>
       <section>Hero</section>
-      <section>Parallax</section>
+      <section id="Experience">Parallax</section>
       <section>Experience</section>
+      <section id="Projects">Parallax</section>
       <section>Projects</section>
-      <section>Education</section>
-      <section>Contact</section>
+      <section id="Education">Education</section>
+      <section id="Contact">Contact</section>
       {/* <section>Footer</section> */}
       {/* <Test /> */}
     </div>
