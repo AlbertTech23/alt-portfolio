@@ -5,5 +5,15 @@ import Skills from "./Skills/Skills";
 import Experience from "./Experience/Experience";
 import Education from "./Education/Education";
 import Projects from "./Projects/Projects";
+import Contact from "./Contact/Contact";
 
-export { Navbar, Sidebar, Hero, Skills, Experience, Projects, Education };
+export {
+  Navbar,
+  Sidebar,
+  Hero,
+  Skills,
+  Experience,
+  Projects,
+  Education,
+  Contact,
+};

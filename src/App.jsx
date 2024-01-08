@@ -2,6 +2,7 @@ import Test from "./Test";
 import "./app.scss";
 import { motion } from "framer-motion";
 import {
+  Contact,
   Education,
   Experience,
   Hero,
@@ -35,7 +36,9 @@ const App = () => {
       <section id="Education">
         <Education />
       </section>
-      <section id="Contact">Contact</section>
+      <section id="Contact">
+        <Contact />
+      </section>
       {/* <section>Footer</section> */}
       {/* <Test /> */}
     </div>
