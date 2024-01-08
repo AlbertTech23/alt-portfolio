@@ -11,7 +11,7 @@ const Navbar = () => {
   const socialLinks = [
     { src: "facebook.png", alt: "facebook" },
     { src: "instagram.png", alt: "instagram" },
-    { src: "youtube.png", alt: "youtube" },
+    { src: "github.png", alt: "github" },
     { src: "linkedin.png", alt: "linkedin" },
   ];
 
@@ -19,13 +19,20 @@ const Navbar = () => {
     <div className="navbarParent">
       <Sidebar />
       <div className="navbarWrapper">
-        <motion.span
-          initial={{ opacity: 0, scale: 0.5 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.5, delay: 0.5 }}
+        <motion.a
+          href="https://github.com/AlbertTech23"
+          whileHover={{ scale: 1.1 }}
+          whileTap={{ scale: 0.95 }}
         >
-          ALBERT TIRTO
-        </motion.span>
+          <motion.span
+            initial={{ opacity: 0, scale: 0.5 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.5, delay: 0.5 }}
+          >
+            <img src="/githubleft.png" alt="githublogo" />
+            AlbertTech23
+          </motion.span>
+        </motion.a>
         <div className="social">
           {socialLinks.map((link, index) => (
             <motion.a
