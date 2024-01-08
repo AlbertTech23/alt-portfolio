@@ -7,6 +7,10 @@ import { motion } from "framer-motion";
 const Sidebar = () => {
   const [open, setOpen] = useState(false);
 
+  const closeSidebar = () => {
+    setOpen(false);
+  };
+
   const variants = {
     open: {
       clipPath: "circle(1200px at 50px 50px)",
@@ -29,7 +33,7 @@ const Sidebar = () => {
   return (
     <motion.div className="sidebarContainer" animate={open ? "open" : "closed"}>
       <motion.div className="bg" variants={variants}>
-        <Links />
+        <Links closeSidebar={closeSidebar} />
       </motion.div>
       <ToggleButton setOpen={setOpen} />
     </motion.div>

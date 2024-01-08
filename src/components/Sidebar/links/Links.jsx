@@ -21,7 +21,7 @@ const itemVariants = {
   },
 };
 
-const Links = () => {
+const Links = ({ closeSidebar }) => {
   const items = [
     "About",
     "Skills",
@@ -39,6 +39,7 @@ const Links = () => {
           variants={itemVariants}
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.95 }}
+          onClick={closeSidebar}
         >
           {item}
         </motion.a>
