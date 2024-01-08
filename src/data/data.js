@@ -86,7 +86,7 @@ export const mySkills = [
 export const myExp = [
   {
     id: 0,
-    img: "https://firebasestorage.googleapis.com/v0/b/flexi-coding.appspot.com/o/neurobit.jpeg?alt=media&token=1cacbb7b-e5ea-4efb-9b3d-f5a31b9564ad",
+    img: "umndoc.png",
     role: "Vice Coordinator Website Division",
     company: "UMN Documentation",
     date: "September 2023 - Present",
@@ -104,7 +104,7 @@ export const myExp = [
   },
   {
     id: 1,
-    img: "https://firebasestorage.googleapis.com/v0/b/flexi-coding.appspot.com/o/neurobit.jpeg?alt=media&token=1cacbb7b-e5ea-4efb-9b3d-f5a31b9564ad",
+    img: "logossh.png",
     role: "Project Lead",
     company: "Sumatra Sizzle House",
     date: "September 2023 - December 2023",
@@ -120,5 +120,53 @@ export const myExp = [
       "GitHub",
     ],
     doc: "https://github.com/AlbertTech23/uas-ssh",
+  },
+  {
+    id: 2,
+    img: "logoumn.png",
+    role: "UI/UX Designer",
+    company: "UMN Computer Science Official Website",
+    date: "November 2023 - January 2024",
+    desc: "Contributed as UI/UX Designer for UMN Computer Science official website, successfully launching the website.",
+    skills: ["Figma", "Adobe Photoshop", "Adobe Premiere Pro"],
+    doc: "https://tk.umn.ac.id/",
+  },
+  {
+    id: 3,
+    img: "mrmsumn2023.png",
+    role: "Member, Event Documentation Division",
+    company: "Mr. & Ms. UMN 2023",
+    date: "March 2023 - January 2024",
+    desc: "Contributed to Mr. & Ms. UMN 2023 as a member of the Event Documentation Division. Learned camera operation, offline editing, and event recap skills.",
+    skills: [
+      "Adobe Premiere Pro",
+      "Adobe After Effects",
+      "Adobe Photoshop",
+      "Adobe Lightroom",
+      "Camera Person",
+    ],
+    doc: "https://www.instagram.com/mrmsumn/",
+  },
+];
+
+export const myEdu = [
+  {
+    id: 0,
+    img: "logoumn.png",
+    school: "Multimedia Nusantara University, Tangerang",
+    date: "Aug 2022 - Aug 2026",
+    grade: "3.96/4.00 (current)",
+    desc: "I am a fourth-semester Computer Engineering student at Multimedia Nusantara University, recognized for responsibility, adaptability, and a strong learning drive. With leadership honed through organizational experience, my goal is to graduate as a contributor in IoT, full-stack development, and data engineering. My enthusiasm for learning and teaching reflects my commitment to impactful contributions in technology.",
+    degree:
+      "Bachelor of Engineering - B.Eng., Computer Science and Engineering",
+  },
+  {
+    id: 1,
+    img: "logokartur.png",
+    school: "High School Science, Karangturi National High School, Semarang",
+    date: "June 2019 - May 2022",
+    grade: "92.88%",
+    desc: "Graduating from Karangturi National High School, Semarang, with an exceptional academic performance of 92.88%, I demonstrated a strong commitment to achieving excellence in my studies. Complementing my academic success, I actively participated in the student council (OSIS), where my organizational and leadership skills flourished. As a dedicated member, I organized events fostering unity and collaboration among students, instilling in me a deep sense of responsibility and teamwork. This dual commitment to academic achievement and active participation exemplifies my holistic approach to education and personal development.",
+    degree: "High School Graduate",
   },
 ];

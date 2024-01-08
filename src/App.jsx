@@ -1,7 +1,14 @@
 import Test from "./Test";
 import "./app.scss";
 import { motion } from "framer-motion";
-import { Experience, Hero, Navbar, Skills } from "./components";
+import {
+  Education,
+  Experience,
+  Hero,
+  Navbar,
+  Projects,
+  Skills,
+} from "./components";
 import Parallax from "./components/Parallax/Parallax";
 const App = () => {
   return (
@@ -22,8 +29,12 @@ const App = () => {
       <section>
         <Experience />
       </section>
-      <section>Projects</section>
-      <section id="Education">Education</section>
+      <section>
+        <Projects />
+      </section>
+      <section id="Education">
+        <Education />
+      </section>
       <section id="Contact">Contact</section>
       {/* <section>Footer</section> */}
       {/* <Test /> */}
