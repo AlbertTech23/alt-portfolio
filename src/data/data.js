@@ -82,3 +82,43 @@ export const mySkills = [
     categoryImage: "",
   },
 ];
+
+export const myExp = [
+  {
+    id: 0,
+    img: "https://firebasestorage.googleapis.com/v0/b/flexi-coding.appspot.com/o/neurobit.jpeg?alt=media&token=1cacbb7b-e5ea-4efb-9b3d-f5a31b9564ad",
+    role: "Vice Coordinator Website Division",
+    company: "UMN Documentation",
+    date: "September 2023 - Present",
+    desc: "Working on the frontend of the web application using ReactTS, Tailwind, and Firebase",
+    skills: [
+      "ReactJS",
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "Tailwind",
+      "GitHub",
+      "Firebase",
+    ],
+    doc: "doc.umn.ac.id",
+  },
+  {
+    id: 1,
+    img: "https://firebasestorage.googleapis.com/v0/b/flexi-coding.appspot.com/o/neurobit.jpeg?alt=media&token=1cacbb7b-e5ea-4efb-9b3d-f5a31b9564ad",
+    role: "Project Lead",
+    company: "Sumatra Sizzle House",
+    date: "September 2023 - December 2023",
+    desc: "Working as a project lead for a restaurant website. I am responsible for the frontend part of the website, including GitHub project management, and deployment.",
+    skills: [
+      "ReactJS",
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "Tailwind",
+      "Sass",
+      "Figma",
+      "GitHub",
+    ],
+    doc: "https://github.com/AlbertTech23/uas-ssh",
+  },
+];
