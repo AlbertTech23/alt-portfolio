@@ -24,6 +24,24 @@ section {
   scroll-snap-align: center;
 }
 
+@mixin mobile {
+  @media screen and (max-width: 768px) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media screen and (max-width: 1024px) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media screen and (max-width: 1366px) {
+    @content;
+  }
+}
+
 // crash course framer motion
 // .course {
 //   height: 100vh;

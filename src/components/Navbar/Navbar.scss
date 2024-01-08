@@ -1,3 +1,5 @@
+@import "../../app.scss";
+
 .navbarParent {
   height: 100px;
 
@@ -8,6 +10,11 @@
     justify-content: space-between;
     align-items: center;
     height: 100%;
+
+    @include mobile {
+      justify-content: flex-end;
+      padding: 20px;
+    }
   }
 
   a {
@@ -21,6 +28,10 @@
     display: flex;
     align-items: center;
     cursor: pointer;
+
+    @include mobile {
+      display: none;
+    }
 
     img {
       width: 25px;
