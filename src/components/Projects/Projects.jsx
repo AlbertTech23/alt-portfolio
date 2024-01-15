@@ -9,6 +9,9 @@ const Projects = () => {
           Dive into 2 years of diverse web projects—React apps, Tailwind CSS,
           TypeScript, APIs, as well as UI/UX Designs.
         </span>
+        <div className="toggleGroup">
+          <div className="projToggleButton">Web</div>
+        </div>
       </div>
     </div>
   );
