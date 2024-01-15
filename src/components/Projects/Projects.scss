@@ -23,4 +23,61 @@
   @include mobile {
     font-size: 24px;
   }
+  .projectWrapper {
+    max-width: 1366px;
+    position: relative;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    padding: 50px 0;
+
+    @media screen and (max-width: 768px) {
+      gap: 6px;
+    }
+
+    .projectMainTitle {
+      font-size: 42px;
+      font-weight: bold;
+      color: white;
+      text-align: center;
+      //   margin-top: 20px;
+
+      @media screen and (max-width: 768px) {
+        margin-top: 12px;
+        font-size: 32px;
+      }
+    }
+
+    .projectMainDesc {
+      font-size: 18px;
+      max-width: 650px;
+      //   font-weight: bold;
+      color: white;
+      text-align: center;
+      margin-top: 12px;
+      margin-bottom: 12px;
+
+      @media screen and (max-width: 768px) {
+        max-width: 600px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        font-size: 16px;
+      }
+
+      @media screen and (max-width: 500px) {
+        max-width: 400px;
+        // margin-top: 10px;
+        font-size: 14px;
+      }
+
+      @media screen and (max-width: 500px) {
+        max-width: 300px;
+        // margin-top: 10px;
+        font-size: 12px;
+      }
+    }
+  }
 }
