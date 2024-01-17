@@ -170,3 +170,46 @@ export const myEdu = [
     degree: "High School Graduate",
   },
 ];
+
+export const projects = [
+  {
+    id: 0,
+    title: "Weather API Website",
+    date: "Jan 2023 - Feb 2023",
+    description:
+      "By harnessing the OpenWeather API, the project fetches and displays accurate weather data, eliminating the need to build a weather data infrastructure from the ground up. The user interface is thoughtfully crafted with custom components, ensuring an intuitive and visually appealing experience. Explore the weather with ease, thanks to the seamless integration of OpenWeather's powerful API.",
+    image: "weather-api.png",
+    tags: ["React JS", "Open Weather", "Weather API", "CSS", "Responsive"],
+    category: "API FETCHING",
+    github: "https://github.com/AlbertTech23/weather-app.git",
+    webapp: "",
+    member: [
+      {
+        name: "Albert Tirto",
+        img: "1080WhiteAlbert.png",
+        linkedin: "",
+        github: "https://github.com/AlbertTech23/",
+      },
+    ],
+  },
+  {
+    id: 1,
+    title: "Camera Gears E-commerce",
+    date: "Sept 2023 - Oct 2023",
+    description:
+      "Developed an E-commerce website dedicated to camera enthusiasts, meticulously crafted with pure HTML, CSS, and JS. Dive into a seamless shopping experience tailored for photography enthusiasts, offering a comprehensive range of camera gears.",
+    image: "altgears.png",
+    tags: ["React Js", "MongoDb", "Node Js", "Express Js", "Redux"],
+    category: "BUSINESS WEB",
+    github: "https://github.com/AlbertTech23/ecommerce-pti-uts",
+    webapp: "",
+    member: [
+      {
+        name: "Albert Tirto",
+        img: "1080WhiteAlbert.png",
+        linkedin: "",
+        github: "https://github.com/AlbertTech23/",
+      },
+    ],
+  },
+];

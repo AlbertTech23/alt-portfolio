@@ -121,12 +121,13 @@
       border-radius: 5px;
     }
     width: 100%;
-    max-width: 1000px;
+    // max-width: 1000px;
     margin-top: 10px;
     display: flex;
     flex-direction: column;
     // justify-content: center;
     align-items: center;
     gap: 12px;
+    overflow-x: hidden;
   }
 }
