@@ -199,7 +199,7 @@ export const projects = [
     description:
       "Developed an E-commerce website dedicated to camera enthusiasts, meticulously crafted with pure HTML, CSS, and JS. Dive into a seamless shopping experience tailored for photography enthusiasts, offering a comprehensive range of camera gears.",
     image: "altgears.png",
-    tags: ["React Js", "MongoDb", "Node Js", "Express Js", "Redux"],
+    tags: ["HTML", "CSS", "JavaScript", "Responsive", "E-commerce"],
     category: "BUSINESS WEB",
     github: "https://github.com/AlbertTech23/ecommerce-pti-uts",
     webapp: "",
