@@ -4,7 +4,7 @@ import "./ProjectCard.scss";
 const ProjectCard = ({ project }) => {
   return (
     <a
-      href={project.github}
+      href={project.webapp}
       target="_blank"
       rel="noreferrer noopener"
       className="projectLink"

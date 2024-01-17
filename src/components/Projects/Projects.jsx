@@ -14,11 +14,11 @@ const Projects = () => {
   return (
     <div className="projectContainer">
       <div className="projectWrapper">
-        <h1 className="projectMainTitle">Projects</h1>
-        <span className="projectMainDesc">
+        <div className="projectMainTitle">Projects</div>
+        <div className="projectMainDesc">
           Dive into 2 years of diverse web projects—React apps, Tailwind CSS,
           TypeScript, APIs, as well as UI/UX Designs.
-        </span>
+        </div>
         <div className="toggleGroup">
           {toggle === "ALL" ? (
             <div className="projToggleButton activeButton">ALL</div>
@@ -52,7 +52,15 @@ const Projects = () => {
             BUSINESS WEB
           </div>
           <div className="divider"></div>
-
+          <div
+            className={`projToggleButton ${
+              toggle === "UI/UX" ? "activeButton" : ""
+            }`}
+            onClick={() => handleToggle("UI/UX")}
+          >
+            UI/UX
+          </div>
+          <div className="divider"></div>
           <div
             className={`projToggleButton ${
               toggle === "IN DEVELOPMENT" ? "activeButton" : ""
@@ -68,7 +76,7 @@ const Projects = () => {
               <ProjectCard project={project} key={num} />
             ))}
           {projects
-            .filter((item) => item.category === toggle)
+            .filter((item) => item.category.includes(toggle))
             .map((project, index) => (
               <ProjectCard project={project} key={index} />
             ))}
