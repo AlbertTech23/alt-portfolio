@@ -1,4 +1,3 @@
-import React from "react";
 import "./Projects.scss";
 import { useState } from "react";
 import ProjectCard from "../Cards/ProjectCard";

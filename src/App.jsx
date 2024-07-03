@@ -1,6 +1,4 @@
-import Test from "./Test";
 import "./app.scss";
-import { motion } from "framer-motion";
 import {
   Contact,
   Education,
@@ -39,7 +37,6 @@ const App = () => {
       <section id="Contact">
         <Contact />
       </section>
-      {/* <Test /> */}
     </div>
   );
 };
