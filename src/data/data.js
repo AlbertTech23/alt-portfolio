@@ -22,14 +22,13 @@ export const mySkills = [
           "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9Ii0xMS41IC0xMC4yMzE3NCAyMyAyMC40NjM0OCI+CiAgPHRpdGxlPlJlYWN0IExvZ288L3RpdGxlPgogIDxjaXJjbGUgY3g9IjAiIGN5PSIwIiByPSIyLjA1IiBmaWxsPSIjNjFkYWZiIi8+CiAgPGcgc3Ryb2tlPSIjNjFkYWZiIiBzdHJva2Utd2lkdGg9IjEiIGZpbGw9Im5vbmUiPgogICAgPGVsbGlwc2Ugcng9IjExIiByeT0iNC4yIi8+CiAgICA8ZWxsaXBzZSByeD0iMTEiIHJ5PSI0LjIiIHRyYW5zZm9ybT0icm90YXRlKDYwKSIvPgogICAgPGVsbGlwc2Ugcng9IjExIiByeT0iNC4yIiB0cmFuc2Zvcm09InJvdGF0ZSgxMjApIi8+CiAgPC9nPgo8L3N2Zz4K",
       },
       {
-        name: "Sass",
-        image:
-          "https://upload.wikimedia.org/wikipedia/commons/9/96/Sass_Logo_Color.svg",
-      },
-      {
         name: "Tailwind",
         image:
           "https://tailwindcss.com/_next/static/media/tailwindcss-mark.3c5441fc7a190fb1800d4a5c7f07ba4b1345a9c8.svg",
+      },
+      {
+        name: "Chakra",
+        image: "chakraui.png",
       },
     ],
     categoryImage: "",
@@ -50,6 +49,14 @@ export const mySkills = [
       {
         name: "Firebase",
         image: "https://www.vectorlogo.zone/logos/firebase/firebase-icon.svg",
+      },
+      {
+        name: "Prisma",
+        image: "prisma.png",
+      },
+      {
+        name: "TypeScript",
+        image: "typescript.png",
       },
     ],
     categoryImage: "",
@@ -78,6 +85,10 @@ export const mySkills = [
         image:
           "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Visual_Studio_Code_1.35_icon.svg/512px-Visual_Studio_Code_1.35_icon.svg.png?20210804221519",
       },
+      {
+        name: "Arduino",
+        image: "arduino.png",
+      },
     ],
     categoryImage: "",
   },
@@ -86,10 +97,20 @@ export const mySkills = [
 export const myExp = [
   {
     id: 0,
+    img: "maxima24.png",
+    role: "Coordinator Website Division",
+    company: "MAXIMA UMN",
+    date: "January 2024 - Present",
+    desc: "Leading the frontend development of the MAXIMA UMN website using Vite + ReactTS, Tailwind, and Chakra UI. The website aims to provide a platform for MAXIMA UMN members to access information and resources easily.",
+    skills: ["ReactTS", "Tailwind", "Chakra UI", "GitHub", "Vite", "API"],
+    doc: "https://maxima.umn.ac.id/",
+  },
+  {
+    id: 1,
     img: "umndoc.png",
     role: "Vice Coordinator Website Division",
     company: "UMN Documentation",
-    date: "September 2023 - Present",
+    date: "September 2023 - March 2024",
     desc: "Working on the frontend of the web application using ReactTS, Tailwind, and Firebase",
     skills: [
       "ReactJS",
@@ -103,7 +124,7 @@ export const myExp = [
     doc: "doc.umn.ac.id",
   },
   {
-    id: 1,
+    id: 2,
     img: "logossh.png",
     role: "Project Lead",
     company: "Sumatra Sizzle House",
@@ -122,7 +143,7 @@ export const myExp = [
     doc: "https://github.com/AlbertTech23/uas-ssh",
   },
   {
-    id: 2,
+    id: 3,
     img: "logoumn.png",
     role: "UI/UX Designer",
     company: "UMN Computer Science Official Website",
@@ -132,7 +153,7 @@ export const myExp = [
     doc: "https://tk.umn.ac.id/",
   },
   {
-    id: 3,
+    id: 4,
     img: "mrmsumn2023.png",
     role: "Member, Event Documentation Division",
     company: "Mr. & Ms. UMN 2023",
@@ -156,7 +177,7 @@ export const myEdu = [
     school: "Multimedia Nusantara University, Tangerang",
     date: "Aug 2022 - Aug 2026",
     grade: "3.96/4.00 (current)",
-    desc: "I am a fourth-semester Computer Engineering student at Multimedia Nusantara University, recognized for responsibility, adaptability, and a strong learning drive. With leadership honed through organizational experience, my goal is to graduate as a contributor in IoT, full-stack development, and data engineering. My enthusiasm for learning and teaching reflects my commitment to impactful contributions in technology.",
+    desc: "I am a fifth-semester Computer Engineering student at Multimedia Nusantara University, recognized for responsibility, adaptability, and a strong learning drive. With leadership honed through organizational experience, my goal is to graduate as a contributor in IoT, full-stack development, and data engineering. My enthusiasm for learning and teaching reflects my commitment to impactful contributions in technology.",
     degree:
       "Bachelor of Engineering - B.Eng., Computer Science and Engineering",
   },

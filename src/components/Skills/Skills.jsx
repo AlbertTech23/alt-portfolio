@@ -7,9 +7,8 @@ const Skills = () => {
       <div className="skillsWrapper">
         <h1 className="skillMainTitle">Skills</h1>
         <span className="skillMainDesc">
-          Here are my versatile skills that I have been working on for the past
-          2 years. Crafting engaging and responsive web applications is my
-          forte.
+          Focused on Web Apps. Recently working on Microcontrollers (Arduino,
+          ESP32) & Networking.
         </span>
         <div className="mySkillsContainer">
           {mySkills.map((item, index) => (
