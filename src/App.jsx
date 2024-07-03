@@ -7,9 +7,14 @@ import {
   Navbar,
   Projects,
   Skills,
+  ProjectDetails,
 } from "./components";
 import Parallax from "./components/Parallax/Parallax";
+import { useState } from "react";
+
 const App = () => {
+  const [openModal, setOpenModal] = useState({ state: false, project: null });
+
   return (
     <div>
       <section id="About">
@@ -29,7 +34,7 @@ const App = () => {
         <Experience />
       </section>
       <section id="Projects">
-        <Projects />
+        <Projects openModal={openModal} setOpenModal={setOpenModal} />
       </section>
       <section id="Education">
         <Education />
@@ -37,6 +42,9 @@ const App = () => {
       <section id="Contact">
         <Contact />
       </section>
+      {openModal.state && (
+        <ProjectDetails openModal={openModal} setOpenModal={setOpenModal} />
+      )}
     </div>
   );
 };

@@ -1,5 +1,6 @@
 import "./Skills.scss";
 import { mySkills } from "../../data/data";
+import { Tilt } from "react-tilt";
 
 const Skills = () => {
   return (
@@ -12,23 +13,25 @@ const Skills = () => {
         </span>
         <div className="mySkillsContainer">
           {mySkills.map((item, index) => (
-            <div className="skill" key={index}>
-              <div className="skillTitle">
-                <h3>{item.title}</h3>
+            <Tilt key={index} className="skill">
+              <div key={index}>
+                <div className="skillTitle">
+                  <h3>{item.title}</h3>
+                </div>
+                <div className="skillList">
+                  {item.skills.map((skill, index) => (
+                    <div className="skillSpecial" key={index}>
+                      <img
+                        className="skillImage"
+                        src={skill.image}
+                        alt={skill.name}
+                      />
+                      <h4>{skill.name}</h4>
+                    </div>
+                  ))}
+                </div>
               </div>
-              <div className="skillList">
-                {item.skills.map((skill, index) => (
-                  <div className="skillSpecial" key={index}>
-                    <img
-                      className="skillImage"
-                      src={skill.image}
-                      alt={skill.name}
-                    />
-                    <h4>{skill.name}</h4>
-                  </div>
-                ))}
-              </div>
-            </div>
+            </Tilt>
           ))}
         </div>
       </div>

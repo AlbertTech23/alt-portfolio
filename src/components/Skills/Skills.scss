@@ -84,7 +84,7 @@
     width: 100%;
     display: flex;
     justify-content: center;
-    gap: 30px;
+    gap: 50px;
     margin-top: 10px;
     flex-wrap: wrap;
 
@@ -93,7 +93,7 @@
     }
 
     @media screen and (max-width: 500px) {
-      gap: 10px;
+      gap: 14px;
     }
 
     .skill {
@@ -101,7 +101,6 @@
       max-width: 500px;
       background-color: rgba(26, 26, 29, 0.35);
       box-shadow: 0 0 15px 1px $accent-color-1;
-
       border: 0.1px solid $accent-color-2;
       border-radius: 16px;
       padding: 18px 36px;
@@ -119,11 +118,13 @@
       @media screen and (max-width: 500px) {
         max-width: 380px;
         padding: 10px 28px;
+        box-shadow: 0 0 10px 1px $accent-color-1;
       }
 
       @media screen and (max-width: 400px) {
-        max-width: 300px;
+        max-width: 280px;
         padding: 10px 20px;
+        box-shadow: 0 0 7.5px 1px $accent-color-1;
       }
     }
     .skillTitle {

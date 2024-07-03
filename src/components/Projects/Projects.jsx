@@ -3,7 +3,7 @@ import { useState } from "react";
 import ProjectCard from "../Cards/ProjectCard";
 import { projects } from "../../data/data";
 
-const Projects = () => {
+const Projects = ({ openModal, setOpenModal }) => {
   const [toggle, setToggle] = useState("ALL");
 
   const handleToggle = (category) => {
@@ -38,12 +38,22 @@ const Projects = () => {
         <div className="projCardContainer">
           {toggle === "ALL" &&
             projects.map((project, num) => (
-              <ProjectCard project={project} key={num} />
+              <ProjectCard
+                project={project}
+                key={num}
+                openModal={openModal}
+                setOpenModal={setOpenModal}
+              />
             ))}
           {projects
             .filter((item) => item.category.includes(toggle))
             .map((project, index) => (
-              <ProjectCard project={project} key={index} />
+              <ProjectCard
+                project={project}
+                key={index}
+                openModal={openModal}
+                setOpenModal={setOpenModal}
+              />
             ))}
         </div>
       </div>
