@@ -7,6 +7,11 @@
   background: linear-gradient(180deg, $primary-color, $tertiary-color);
   position: relative;
 
+  a {
+    text-decoration: none;
+    color: white;
+  }
+
   .heroWrapper {
     max-width: 1366px;
     height: 100%;

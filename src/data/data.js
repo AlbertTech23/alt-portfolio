@@ -12,7 +12,7 @@ export const mySkills = [
           "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/1452px-CSS3_logo_and_wordmark.svg.png",
       },
       {
-        name: "JavaScript",
+        name: "JS",
         image:
           "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/JavaScript-logo.png/800px-JavaScript-logo.png",
       },
@@ -55,7 +55,7 @@ export const mySkills = [
         image: "prisma.png",
       },
       {
-        name: "TypeScript",
+        name: "TS",
         image: "typescript.png",
       },
     ],
@@ -209,7 +209,7 @@ export const projects = [
       "JavaScript",
       "Responsive",
     ],
-    category: "API FETCHING",
+    category: "WEB APP",
     github: "https://github.com/AlbertTech23/weather-app.git",
     webapp:
       "https://github.com/AlbertTech23/weather-app/tree/main/weather1-app",
@@ -237,7 +237,7 @@ export const projects = [
       "E-commerce",
       "UI/UX Design",
     ],
-    category: ["BUSINESS WEB", "UI/UX"],
+    category: ["WEB APP", "UI/UX"],
     github: "https://github.com/AlbertTech23/ecommerce-pti-uts",
     webapp: "https://github.com/AlbertTech23/ecommerce-pti-uts",
     member: [
@@ -268,7 +268,7 @@ export const projects = [
       "Saas",
       "Vite",
     ],
-    category: ["BUSINESS WEB", "API FETCHING", "UI/UX"],
+    category: ["WEB APP", "UI/UX"],
     github: "https://github.com/AlbertTech23/uas-ssh",
     webapp: "https://github.com/AlbertTech23/uas-ssh",
     member: [
@@ -324,7 +324,7 @@ export const projects = [
       "NodeJS",
       "ExpressJS",
     ],
-    category: ["IN DEVELOPMENT"],
+    category: ["WEB APP", "IN DEVELOPMENT"],
     github: "https://github.com/AlbertTech23/uas-ssh",
     webapp: "doc.umn.ac.id",
     member: [],
@@ -337,7 +337,7 @@ export const projects = [
       "Contributed as a UI/UX Designer to the development of the UMN Computer Science official website, which was successfully launched at https://tk.umn.ac.id/.",
     image: "tkumn.png",
     tags: ["Figma", "UI/UX Design", "Adobe Photoshop", "Adobe Premiere Pro"],
-    category: ["IN DEVELOPMENT", "UI/UX"],
+    category: ["UI/UX", "OTHERS"],
     github: "https://github.com/Web-TK-UMN",
     webapp: "tk.umn.ac.id",
     member: [],

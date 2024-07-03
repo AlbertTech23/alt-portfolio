@@ -16,59 +16,25 @@ const Projects = () => {
       <div className="projectWrapper">
         <div className="projectMainTitle">Projects</div>
         <div className="projectMainDesc">
-          Dive into 2 years of diverse web projects—React apps, Tailwind CSS,
-          TypeScript, APIs, as well as UI/UX Designs.
+          Explore from React web apps and TypeScript to APIs, UI/UX designs,
+          IoT, and networking solutions.
         </div>
         <div className="toggleGroup">
-          {toggle === "ALL" ? (
-            <div className="projToggleButton activeButton">ALL</div>
-          ) : (
-            <div
-              className="projToggleButton"
-              onClick={() => handleToggle("ALL")}
-            >
-              ALL
-            </div>
+          {["ALL", "WEB APP", "UI/UX", "IN DEVELOPMENT", "OTHERS"].map(
+            (category) => (
+              <>
+                <div
+                  className={`projToggleButton ${
+                    toggle === category ? "activeButton" : ""
+                  }`}
+                  onClick={() => handleToggle(category)}
+                >
+                  {category}
+                </div>
+                <div className="divider"></div>
+              </>
+            )
           )}
-
-          <div className="divider"></div>
-
-          <div
-            className={`projToggleButton ${
-              toggle === "API FETCHING" ? "activeButton" : ""
-            }`}
-            onClick={() => handleToggle("API FETCHING")}
-          >
-            API FETCHING
-          </div>
-          <div className="divider"></div>
-
-          <div
-            className={`projToggleButton ${
-              toggle === "BUSINESS WEB" ? "activeButton" : ""
-            }`}
-            onClick={() => handleToggle("BUSINESS WEB")}
-          >
-            BUSINESS WEB
-          </div>
-          <div className="divider"></div>
-          <div
-            className={`projToggleButton ${
-              toggle === "UI/UX" ? "activeButton" : ""
-            }`}
-            onClick={() => handleToggle("UI/UX")}
-          >
-            UI/UX
-          </div>
-          <div className="divider"></div>
-          <div
-            className={`projToggleButton ${
-              toggle === "IN DEVELOPMENT" ? "activeButton" : ""
-            }`}
-            onClick={() => handleToggle("IN DEVELOPMENT")}
-          >
-            IN DEVELOPMENT
-          </div>
         </div>
         <div className="projCardContainer">
           {toggle === "ALL" &&
