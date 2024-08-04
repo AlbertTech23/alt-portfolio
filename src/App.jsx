@@ -18,6 +18,48 @@ const App = () => {
 
   return (
     <div>
+      <AnimatedCursor
+        innerSize={12.5}
+        outerSize={50}
+        innerScale={1.5}
+        outerScale={2}
+        color="#c3073f"
+        outerAlpha={0.3}
+        innerStyle={{
+          backgroundColor: "#c3073f",
+          mixBlendMode: "normal",
+          zIndex: 9999,
+        }}
+        outerStyle={{
+          backgroundColor: "#c3073f50",
+          mixBlendMode: "normal",
+          zIndex: 9999,
+        }}
+        clickables={[
+          "a",
+          'input[type="text"]',
+          'input[type="email"]',
+          'input[type="number"]',
+          'input[type="submit"]',
+          'input[type="image"]',
+          "label[for]",
+          "select",
+          "textarea",
+          "button",
+          ".link",
+          {
+            target: ".custom",
+            options: {
+              innerSize: 12,
+              outerSize: 12,
+              color: "255, 255, 255",
+              outerAlpha: 0.3,
+              innerScale: 0.7,
+              outerScale: 5,
+            },
+          },
+        ]}
+      />
       <section id="About">
         <Navbar />
         <Hero />
@@ -46,46 +88,6 @@ const App = () => {
       {openModal.state && (
         <ProjectDetails openModal={openModal} setOpenModal={setOpenModal} />
       )}
-      <AnimatedCursor
-        innerSize={12.5}
-        outerSize={50}
-        innerScale={1.5}
-        outerScale={2}
-        color="#c3073f"
-        outerAlpha={0.3}
-        innerStyle={{
-          backgroundColor: "#c3073f",
-          mixBlendMode: "normal",
-        }}
-        outerStyle={{
-          backgroundColor: "#c3073f50",
-          mixBlendMode: "normal",
-        }}
-        clickables={[
-          "a",
-          'input[type="text"]',
-          'input[type="email"]',
-          'input[type="number"]',
-          'input[type="submit"]',
-          'input[type="image"]',
-          "label[for]",
-          "select",
-          "textarea",
-          "button",
-          ".link",
-          {
-            target: ".custom",
-            options: {
-              innerSize: 12,
-              outerSize: 12,
-              color: "255, 255, 255",
-              outerAlpha: 0.3,
-              innerScale: 0.7,
-              outerScale: 5,
-            },
-          },
-        ]}
-      />
     </div>
   );
 };

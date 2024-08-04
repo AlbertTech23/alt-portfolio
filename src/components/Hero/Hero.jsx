@@ -73,20 +73,25 @@ const Hero = () => {
             />
           </motion.h1>
           <motion.div className="heroButtons" variants={textVariants}>
-            <motion.button
-              variants={textVariants}
-              whileHover={{
-                backgroundColor: "#f8f8f8",
-              }}
-            >
-              <a href="#Skills">See the Latest Works</a>
-            </motion.button>
-            <motion.button
-              variants={textVariants}
-              whileHover={{ backgroundColor: "#f8f8f8" }}
-            >
-              <a href="#Contact">Contact Me</a>
-            </motion.button>
+            <a href="#Skills">
+              <motion.button
+                variants={textVariants}
+                whileHover={{
+                  backgroundColor: "#f8f8f8",
+                  color: "#c3073f",
+                }}
+              >
+                See the Latest Works
+              </motion.button>
+            </a>
+            <a href="#Contact">
+              <motion.button
+                variants={textVariants}
+                whileHover={{ backgroundColor: "#f8f8f8", color: "#c3073f" }}
+              >
+                Contact Me
+              </motion.button>
+            </a>
           </motion.div>
           <motion.img
             src="./scroll.png"
