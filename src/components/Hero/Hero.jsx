@@ -1,5 +1,5 @@
 import "./Hero.scss";
-import { motion } from "framer-motion";
+import { color, motion } from "framer-motion";
 
 const textVariants = {
   initial: {
@@ -56,10 +56,18 @@ const Hero = () => {
             Web Developer and UI Designer
           </motion.h1>
           <motion.div className="heroButtons" variants={textVariants}>
-            <motion.button variants={textVariants}>
+            <motion.button
+              variants={textVariants}
+              whileHover={{
+                backgroundColor: "#f8f8f8",
+              }}
+            >
               <a href="#Skills">See the Latest Works</a>
             </motion.button>
-            <motion.button variants={textVariants}>
+            <motion.button
+              variants={textVariants}
+              whileHover={{ backgroundColor: "#f8f8f8" }}
+            >
               <a href="#Contact">Contact Me</a>
             </motion.button>
           </motion.div>

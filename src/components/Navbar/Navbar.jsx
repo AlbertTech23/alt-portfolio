@@ -9,10 +9,22 @@ const Navbar = () => {
   };
 
   const socialLinks = [
-    { src: "facebook.png", alt: "facebook" },
-    { src: "instagram.png", alt: "instagram" },
-    { src: "github.png", alt: "github" },
-    { src: "linkedin.png", alt: "linkedin" },
+    { src: "facebook.png", alt: "facebook", href: "https://www.facebook.com" },
+    {
+      src: "instagram.png",
+      alt: "instagram",
+      href: "https://www.instagram.com/alberttirtok",
+    },
+    {
+      src: "github.png",
+      alt: "github",
+      href: "https://github.com/AlbertTech23",
+    },
+    {
+      src: "linkedin.png",
+      alt: "linkedin",
+      href: "https://www.linkedin.com/in/albert-tirto",
+    },
   ];
 
   return (
@@ -23,6 +35,7 @@ const Navbar = () => {
           href="https://github.com/AlbertTech23"
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.95 }}
+          target="_blank"
         >
           <motion.span
             initial={{ opacity: 0, scale: 0.5 }}
@@ -41,7 +54,8 @@ const Navbar = () => {
               initial="hidden"
               animate="visible"
               transition={{ duration: 0.5, delay: index * 0.2 }}
-              href="#"
+              href={link.href}
+              target="_blank"
             >
               <img src={link.src} alt={link.alt} />
             </motion.a>
