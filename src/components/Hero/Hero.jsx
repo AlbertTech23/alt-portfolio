@@ -1,5 +1,6 @@
 import "./Hero.scss";
-import { color, motion } from "framer-motion";
+import { motion } from "framer-motion";
+import Typewriter from "typewriter-effect";
 
 const textVariants = {
   initial: {
@@ -40,6 +41,12 @@ const sliderVariants = {
   },
 };
 
+const roles = [
+  "Web Developer & UI/UX Designer",
+  "Network Engineer & IoT Enthusiast",
+  "Project Manager & Tech Mentor",
+];
+
 const Hero = () => {
   return (
     <div className="heroContainer">
@@ -51,9 +58,19 @@ const Hero = () => {
           animate="animate"
         >
           <motion.h2 variants={textVariants}>ALBERT TIRTO</motion.h2>
-          {/* later apply the typewriter effect */}
           <motion.h1 variants={textVariants}>
-            Web Developer and UI Designer
+            <Typewriter
+              options={{
+                strings: roles,
+                autoStart: true,
+                loop: true,
+                deleteSpeed: 50,
+                delay: 75,
+                startDelay: 1000,
+                pauseFor: 1000,
+                cursor: "_",
+              }}
+            />
           </motion.h1>
           <motion.div className="heroButtons" variants={textVariants}>
             <motion.button
