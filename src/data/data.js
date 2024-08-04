@@ -211,8 +211,7 @@ export const projects = [
     ],
     category: "WEB APP",
     github: "https://github.com/AlbertTech23/weather-app.git",
-    webapp:
-      "https://github.com/AlbertTech23/weather-app/tree/main/weather1-app",
+    webapp: "https://github.com/AlbertTech23/weather-app.git",
     member: [
       {
         name: "Albert Tirto",
@@ -325,8 +324,8 @@ export const projects = [
       "ExpressJS",
     ],
     category: ["WEB APP", "IN DEVELOPMENT"],
-    github: "https://github.com/AlbertTech23/uas-ssh",
-    webapp: "doc.umn.ac.id",
+    github: "https://github.com/framsahroni8/umndoc",
+    webapp: "https://doc.umn.ac.id",
     member: [],
   },
   {
@@ -339,7 +338,7 @@ export const projects = [
     tags: ["Figma", "UI/UX Design", "Adobe Photoshop", "Adobe Premiere Pro"],
     category: ["UI/UX", "OTHERS"],
     github: "https://github.com/Web-TK-UMN",
-    webapp: "tk.umn.ac.id",
+    webapp: "https://tk.umn.ac.id",
     member: [],
   },
 ];

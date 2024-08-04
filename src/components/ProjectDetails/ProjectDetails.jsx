@@ -167,6 +167,7 @@ const Button = styled.a`
         color: rgba(255, 255, 255, 0.6);
         &:hover {
             background-color: #95074085;
+            color: white;
         }
     `}
   cursor: pointer;
@@ -192,7 +193,7 @@ const ProjectDetails = ({ openModal, setOpenModal }) => {
           <CloseRounded
             style={{
               position: "absolute",
-              top: "10px",
+              top: "15px",
               right: "20px",
               cursor: "pointer",
             }}
@@ -234,10 +235,10 @@ const ProjectDetails = ({ openModal, setOpenModal }) => {
             </>
           )}
           <ButtonGroup>
-            <Button dull href={project?.github} target="new">
+            <Button dull href={project?.github} target="_blank">
               View Code
             </Button>
-            <Button href={project?.webapp} target="new">
+            <Button href={project?.webapp} target="_blank">
               View Live App
             </Button>
           </ButtonGroup>
