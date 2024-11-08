@@ -164,7 +164,7 @@ const Button = styled.a`
     dull &&
     `
         background-color: #1c1e27;
-        color: rgba(255, 255, 255, 0.6);
+        color: rgba(255, 255, 255, 1);
         &:hover {
             background-color: #95074085;
             color: white;

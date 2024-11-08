@@ -1,5 +1,10 @@
 @import "../../styles/color.scss";
 
+.expDocs {
+  display: flex;
+  gap: 12px;
+}
+
 .expDoc {
   display: none;
   //   height: 70px;
@@ -85,7 +90,7 @@
     width: 100%;
 
     .logo {
-      height: 50px;
+      height: 60px;
       background-color: #00000022;
       border-radius: 10px;
       margin-top: 4px;

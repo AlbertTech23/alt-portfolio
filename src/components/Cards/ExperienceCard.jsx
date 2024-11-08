@@ -31,14 +31,31 @@ const ExperienceCard = ({ exp }) => {
           </>
         )}
       </div>
-      {exp.doc && (
-        <a href={exp.doc} target="new" className="expDoc">
-          <div className="expDoc">
-            {/* <img src={exp.doc} alt={exp.company} className="expDoc" /> */}➤
-            {"  "}
-            {exp.doc}
-          </div>
-        </a>
+      {exp.docs && (
+        <div className="expDocs">
+          {Array.isArray(exp.docs) ? (
+            exp.docs.map((doc, index) => (
+              <a
+                key={index}
+                href={doc}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="expDoc"
+              >
+                ➤ {doc}
+              </a>
+            ))
+          ) : (
+            <a
+              href={exp.docs}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="expDoc"
+            >
+              ➤ {exp.docs}
+            </a>
+          )}
+        </div>
       )}
     </div>
   );

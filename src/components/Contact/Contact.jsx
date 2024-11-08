@@ -92,6 +92,9 @@ const Contact = () => {
               placeholder="Message"
             ></textarea>
             <button>Submit</button>
+            <span>
+              <b>*This feature is currently disabled.</b>
+            </span>
           </motion.form>
         </div>
       </motion.div>
