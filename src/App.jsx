@@ -10,56 +10,66 @@ import {
   ProjectDetails,
 } from "./components";
 import Parallax from "./components/Parallax/Parallax";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import AnimatedCursor from "react-animated-cursor";
 
 const App = () => {
   const [openModal, setOpenModal] = useState({ state: false, project: null });
 
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    if (window.innerWidth <= 768) {
+      setIsMobile(true);
+    }
+  }, []);
+
   return (
     <div>
-      <AnimatedCursor
-        innerSize={12.5}
-        outerSize={50}
-        innerScale={1.5}
-        outerScale={2}
-        color="#c3073f"
-        outerAlpha={0.3}
-        innerStyle={{
-          backgroundColor: "#c3073f",
-          mixBlendMode: "normal",
-          zIndex: 9999,
-        }}
-        outerStyle={{
-          backgroundColor: "#c3073f50",
-          mixBlendMode: "normal",
-          zIndex: 9999,
-        }}
-        clickables={[
-          "a",
-          'input[type="text"]',
-          'input[type="email"]',
-          'input[type="number"]',
-          'input[type="submit"]',
-          'input[type="image"]',
-          "label[for]",
-          "select",
-          "textarea",
-          "button",
-          ".link",
-          {
-            target: ".custom",
-            options: {
-              innerSize: 12,
-              outerSize: 12,
-              color: "255, 255, 255",
-              outerAlpha: 0.3,
-              innerScale: 0.7,
-              outerScale: 5,
+      {!isMobile && (
+        <AnimatedCursor
+          innerSize={12.5}
+          outerSize={50}
+          innerScale={1.5}
+          outerScale={2}
+          color="#c3073f"
+          outerAlpha={0.3}
+          innerStyle={{
+            backgroundColor: "#c3073f",
+            mixBlendMode: "normal",
+            zIndex: 9999,
+          }}
+          outerStyle={{
+            backgroundColor: "#c3073f50",
+            mixBlendMode: "normal",
+            zIndex: 9999,
+          }}
+          clickables={[
+            "a",
+            'input[type="text"]',
+            'input[type="email"]',
+            'input[type="number"]',
+            'input[type="submit"]',
+            'input[type="image"]',
+            "label[for]",
+            "select",
+            "textarea",
+            "button",
+            ".link",
+            {
+              target: ".custom",
+              options: {
+                innerSize: 12,
+                outerSize: 12,
+                color: "255, 255, 255",
+                outerAlpha: 0.3,
+                innerScale: 0.7,
+                outerScale: 5,
+              },
             },
-          },
-        ]}
-      />
+          ]}
+        />
+      )}
       <section id="About">
         <Navbar />
         <Hero />
