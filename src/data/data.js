@@ -223,8 +223,8 @@ export const projects = [
       "Rive",
     ],
     category: ["WEB APP", "UI/UX"],
-    github: "https://github.com/AlbertTech23/weather-app.git",
-    webapp: "https://github.com/AlbertTech23/weather-app.git",
+    github: "https://github.com/MAXIMA-2024",
+    webapp: "https://www.maximaumn.id/",
     member: [
       {
         name: "Albert Tirto",
